@@ -1,0 +1,29 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/result_item_cardView"
+    android:layout_width="@dimen/item_image_width"
+    android:layout_height="@dimen/item_image_height"
+    android:background="@color/white"
+    android:layout_marginVertical="@dimen/margin_xsmall"
+    android:layout_marginHorizontal="@dimen/margin_xsmall"
+    android:layout_gravity="center_horizontal"
+    app:cardCornerRadius="@dimen/card_config"
+    app:cardElevation="@dimen/card_config">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/margin_xxsmall"
+        android:paddingVertical="@dimen/margin_xxsmall">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_image_search_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_xxsmall">4dp</dimen>
+    <dimen name="margin_xsmall">8dp</dimen>
+    <dimen name="margin_small">15dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_big">32dp</dimen>
+
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="wrap_constraint">300dp</dimen>
+    <dimen name="wrap_constraint_progress_bar">100dp</dimen>
+    <dimen name="wrap_constraint_little_image">100dp</dimen>
+
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="item_title_textSize">16sp</dimen>
+    <dimen name="item_subtitle_textSize">14sp</dimen>
+
+    <dimen name="item_image_height">180dp</dimen>
+    <dimen name="item_image_width">160dp</dimen>
+    <dimen name="card_config">4dp</dimen>
+    <dimen name="card_image_height">110dp</dimen>
+    <dimen name="card_image_width">130dp</dimen>
+
+    <integer name="exo_player_times">3000</integer>
+    <integer name="exo_player_time_out">1000</integer>
+
+</resources>

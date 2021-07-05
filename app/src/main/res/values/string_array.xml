@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="resolutions">
+        <item>160p</item>
+        <item>360p</item>
+        <item>480p</item>
+        <item>720p</item>
+        <item>720p60</item>
+        <item>1080p60</item>
+        <item>Audio only</item>
+    </string-array>
+</resources>

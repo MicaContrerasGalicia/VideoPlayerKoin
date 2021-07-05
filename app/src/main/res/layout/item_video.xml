@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_video_cardview"
+        android:layout_width="@dimen/card_image_width"
+        android:layout_height="@dimen/card_image_height"
+        android:layout_marginHorizontal="@dimen/margin_xsmall"
+        android:layout_marginVertical="@dimen/margin_xsmall"
+        app:cardCornerRadius="@dimen/card_config"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/item_video_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/ic_baseline_image_search_24" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginVertical="@dimen/margin_xsmall">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_title_textSize"
+            tools:text="The Evolution of the Wide Receiver (Ep. 5)" />
+
+        <TextView
+            android:id="@+id/item_time_and_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginVertical="@dimen/margin_xsmall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_subtitle_textSize"
+            tools:text="22:54 • Mon, 8/12" />
+    </LinearLayout>
+</LinearLayout>

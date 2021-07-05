@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/TopGamesFragment">
+
+    <fragment
+        android:id="@+id/TopGamesFragment"
+        android:name="com.globant.videoplayerproject.ui.topGames.TopGamesFragment"
+        android:label="TopGamesFragment"
+        tools:layout="@layout/fragment_top_games">
+        <action
+            android:id="@+id/navigateToListStreamFragment"
+            app:destination="@id/TopStreamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TopStreamFragment"
+        android:name="com.globant.videoplayerproject.ui.topStream.TopStreamFragment"
+        android:label="TopStreamFragment"
+        tools:layout="@layout/fragment_top_stream">
+        <argument
+            android:name="gameId"
+            app:argType="string" />
+
+        <argument
+            android:name="gameName"
+            app:argType="string" />
+        <action
+            android:id="@+id/navigateToListVideosFragment"
+            app:destination="@id/listVideosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listVideosFragment"
+        android:name="com.globant.videoplayerproject.ui.videos.ListVideosFragment"
+        android:label="ListVideosFragment"
+        tools:layout="@layout/fragment_list_videos">
+        <argument
+            android:name="listStreams"
+            app:argType="com.globant.videoplayerproject.model.DataStream[]" />
+        <argument
+            android:name="resolution"
+            app:argType="string" />
+        <argument
+            android:name="streamSelected"
+            app:argType="com.globant.videoplayerproject.model.DataStream" />
+    </fragment>
+
+</navigation>

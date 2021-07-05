@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VideoPlayerProject</string>
+    <string name="top_games_title">Top Games</string>
+    <string name="error">We have an error!</string>
+    <string name="retry">Retry</string>
+    <string name="error_message">We have an error. Please try again!</string>
+    <string name="live">Live</string>
+    <string name="cancel">Cancel</string>
+    <string name="channel">Channel</string>
+    <string name="search">Search</string>
+</resources>

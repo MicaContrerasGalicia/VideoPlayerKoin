@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layoutDirection="ltr"
+    android:background="@color/background_player"
+    android:orientation="vertical"
+    tools:targetApi="28">
+
+    <FrameLayout
+        android:id="@+id/exo_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_constraint"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layoutDirection="ltr">
+
+        <View
+            android:id="@+id/exo_center_view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/exo_black_opacity_30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton android:id="@id/exo_rew"
+                android:src="@drawable/exo_styled_controls_rewind"
+                style="@style/ExoMediaButton.Rewind"/>
+
+            <ImageButton android:id="@id/exo_play"
+                android:src="@drawable/exo_ic_play_circle_filled"
+                style="@style/ExoMediaButton.Play"/>
+
+            <ImageButton android:id="@id/exo_pause"
+                android:src="@drawable/exo_ic_pause_circle_filled"
+                style="@style/ExoMediaButton.Pause"/>
+
+            <ImageButton android:id="@id/exo_ffwd"
+                android:src="@drawable/exo_ripple_ffwd"
+                style="@style/ExoMediaButton.FastForward"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/live"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:textColor="@color/live"
+            android:text="@string/live"
+            android:paddingHorizontal="@dimen/margin_small"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/exo_custom_progress_margin_bottom"/>
+
+        <ImageButton
+            android:id="@+id/exo_settings"
+            style="@style/ExoStyledControls.Button.Bottom.Settings" />
+
+        <ImageButton
+            android:id="@+id/exo_fullscreen"
+            android:layout_gravity="end"
+            style="@style/ExoStyledControls.Button.Bottom.FullScreen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxsmall"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_subtitle_textSize"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/margin_xxsmall"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"/>
+
+        <View android:id="@id/exo_progress_placeholder"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:id="@id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_subtitle_textSize"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/margin_xxsmall"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
